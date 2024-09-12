@@ -8,6 +8,8 @@ import Wind from "./components/Wind/Wind";
 import Pollution from "./components/Population/Population";
 import FeelsLike from "./components/FeelsLike/FeelsLike";
 import Humidity from "./components/Humidity/Humidity";
+import Visibility from "./components/Visibility/Visibility";
+import Pressure from "./components/Pressure/Pressure";
 export default function Home() {
   return (
     <main className="mx-[1rem] lg:mx=[2-rem] xl:mx-[6rem] 2xl:mx-[16rem] m-auto">
@@ -26,6 +28,8 @@ export default function Home() {
             <Pollution/>
             <FeelsLike/>
             <Humidity/>
+            <Visibility/>
+            <Pressure/>
           </div>
         </div>
 
