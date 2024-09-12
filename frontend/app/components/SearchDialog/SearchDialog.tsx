@@ -29,7 +29,7 @@ function SearchDialog() {
             <p className="text-sm text-muted-foreground">Search Here...</p>
             <div className="command dark:bg-[#262626] bg-slate-200  py-[2px] pl-[5px] pr-[7px] rounded-sm ml-[10rem] flex items-center gap-2">
               {commandIcon}
-              <span className="text-[9px]">Search</span>
+              <span className="text-[9px]">F</span>
             </div>
           </Button>
         </DialogTrigger>
