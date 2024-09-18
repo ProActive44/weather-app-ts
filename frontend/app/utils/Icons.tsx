@@ -1,4 +1,4 @@
-import { Github, Sun, Command, Search, CloudDrizzle,UsersRound, CloudRain, Snowflake, CloudSun, Cloudy, Navigation, ThermometerSun, Sunset, Wind, Gauge, Droplets, Eye, Thermometer } from "lucide-react";
+import { Github, Sun, Command, Search, CloudDrizzle,UsersRound, CloudRain, Snowflake, CloudSun, Cloudy, Navigation, ThermometerSun, Sunset, Wind, Gauge, Droplets, Eye, Thermometer, CalendarDays } from "lucide-react";
 
 export const github = <Github size={15} />;
 export const sun = <Sun size={15} />;
@@ -18,4 +18,5 @@ export const droplets = <Droplets size={15} />;
 export const eye = <Eye size={15} />;
 export const thermometer = <Thermometer size={15} />;
 export const people = <UsersRound size={15} />;
+export const calender = <CalendarDays size={15} />;
 
