@@ -10,15 +10,16 @@ import FeelsLike from "./components/FeelsLike/FeelsLike";
 import Humidity from "./components/Humidity/Humidity";
 import Visibility from "./components/Visibility/Visibility";
 import Pressure from "./components/Pressure/Pressure";
-import Mapbox from "./components/Mapbox/Mapbox";
+import Mapbox from "./components/Mapbox/Mapbox.js";
 import defaultStates from "./utils/defaultStates";
 import FiveDayForecast from "./components/FiveDayForecast/FiveDayForecast";
-// import { useGlobalContextUpdate } from "./context/globalContext";
+import { useGlobalContextUpdate } from "./context/globalContext";
 import Image from "next/image";
 
 
 export default function Home() {
   // const { setActiveCityCoords } = useGlobalContextUpdate();
+  // console.log(setActiveCityCoords);
 
   // const getClickedCityCords = (lat: number, lon: number) => {
   //   setActiveCityCoords([lat, lon]);
@@ -63,7 +64,7 @@ export default function Home() {
                       key={index}
                       className="border rounded-lg cursor-pointer dark:bg-dark-grey shadow-sm dark:shadow-none"
                       // onClick={() => {
-                        // getClickedCityCords(state.lat, state.lon);
+                      //   getClickedCityCords(state.lat, state.lon);
                       // }}
                     >
                       <p className="px-6 py-4">{state.name}</p>
