@@ -8,7 +8,7 @@ import React from "react";
 
 function AirPollution() {
   const { airQuality } = useGlobalContext();
-
+  
   // check if airQuality is available, check if necessary properties are available
   if (
     !airQuality ||
@@ -20,8 +20,9 @@ function AirPollution() {
       <Skeleton className="h-[12rem] w-full col-span-2 md:col-span-full" />
     );
   }
-
+  
   const airQualityIndex = airQuality.list[0].main.aqi * 10;
+  console.log(airQualityIndex)
 
   const filteredIndex = airQualityIndexText.find((item) => {
     return item.rating === airQualityIndex;
@@ -35,7 +36,7 @@ function AirPollution() {
       <h2 className="flex items-center gap-2 font-medium">
         {thermo}Air Pollution
       </h2>
-      <Progress value={airQualityIndex} max={100} className="progress" />
+      <Progress value={airQualityIndex} max={100} className="progress dark:bg-dark-grey" />
       <p className="text-sm">Air quality is {filteredIndex?.description}. </p>
     </div>
   );

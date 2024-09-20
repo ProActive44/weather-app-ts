@@ -13,13 +13,13 @@ import Pressure from "./components/Pressure/Pressure";
 import Mapbox from "./components/Mapbox/Mapbox.js";
 import defaultStates from "./utils/defaultStates";
 import FiveDayForecast from "./components/FiveDayForecast/FiveDayForecast";
-import { useGlobalContextUpdate } from "./context/globalContext";
 import Image from "next/image";
+import { useGlobalContextUpdate } from "./context/globalContext";
 
 
 export default function Home() {
   // const { setActiveCityCoords } = useGlobalContextUpdate();
-  // console.log(setActiveCityCoords);
+  // console.log(setActiveCityCoords); 
 
   // const getClickedCityCords = (lat: number, lon: number) => {
   //   setActiveCityCoords([lat, lon]);

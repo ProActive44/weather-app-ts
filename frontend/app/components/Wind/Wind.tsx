@@ -22,9 +22,9 @@ function Wind() {
             <div className="image relative">
                 <Image src="/compass_body.svg" alt="compass_body" width={110} height={110}/>
                 <Image src="/compass_arrow.svg" alt="compass_arrow" className='absolute top-0 left-[50%] transition-all duration-500 ease-in-out dark:invert' style={{
-                    transform: `translateX(-50%) rotate(${WindDirection}deg)`,
+                    transform: `translateX(-50%) rotate(${WindDirection}deg)`, 
+                    //using the transform property to rotate the image
                     height: "100%",
-
                 }} width={11} height={11}/>
             </div>
             <p className='absolute translate-x-[15%] dark:text-white font-medium'>{Math.round(WindSpeed)}m/s</p>

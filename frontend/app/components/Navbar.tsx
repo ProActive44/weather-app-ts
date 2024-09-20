@@ -13,6 +13,7 @@ function Navbar() {
 
   return (
     <div className='w-full py-4 flex items-center justify-between'>
+      <h1 className='font-bold text-xl'>WidgetHub </h1>
       <div className='left'></div>
       <div className='search-container flex shrink-0 w-full gap-2 sm:w-fit'></div>
       <SearchDialog/>
