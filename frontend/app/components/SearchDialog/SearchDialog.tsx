@@ -20,7 +20,7 @@ function SearchDialog() {
 
   useEffect(() => {
     console.log(geoCodedList)
-  },  [inputValue]);
+  },  [geoCodedList]);
 
   return (
     <div className="search-btn">
