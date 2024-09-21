@@ -13,7 +13,6 @@ import Pressure from "./components/Pressure/Pressure";
 import Mapbox from "./components/Mapbox/Mapbox.js";
 import defaultStates from "./utils/defaultStates";
 import FiveDayForecast from "./components/FiveDayForecast/FiveDayForecast";
-import Image from "next/image";
 
 
 export default function Home() {
@@ -52,9 +51,6 @@ export default function Home() {
                     <div
                       key={index}
                       className="border rounded-lg cursor-pointer dark:bg-dark-grey shadow-sm dark:shadow-none"
-                      // onClick={() => {
-                      //   getClickedCityCords(state.lat, state.lon);
-                      // }}
                     >
                       <p className="px-6 py-4">{state.name}</p>
                     </div>
